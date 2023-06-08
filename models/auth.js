@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const authSchema = new Schema({
     taskexId: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     taskexPassword: {
         type: String,

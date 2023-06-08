@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const landingRoutes = require('./routes/landing');
 require('dotenv').config();
 
 
@@ -15,6 +16,8 @@ app.use((req,res,next) => {
     console.log(req.path, req.method);
     next();
 });
+
+app.use('/', landingRoutes);
 
 mongoose.connect(process.env.MONGO_URI, 
     { useNewUrlParser: true, useUnifiedTopology: true })

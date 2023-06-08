@@ -282,37 +282,42 @@
     
     <!-- taskExid -->
     <p class="goto_id_text">Go to your TaskEx ID</p>
+<form action="/" method="post">
     <input type="text" name="myText" id="taskex_id" placeholder="Enter TaskEx Id">
-    <button id="go">Go</button>
+    <button id="go" type="submit">Go</button>
+</form>
 
-    <!-- password -->
-    <div id="pass_div">
-        <img src="./close.png" alt="" id="close_pass_div">
-        <div class="pass_required">Password required</div>
+<!-- password -->
+<div id="pass_div">
+    <img src="/images/close.png" alt="appears here" id="close_pass_div">
+    <div class="pass_required">Password required</div>
 
-        <p class="password_details">Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Molestias quisquam id minus saepe! Distinctio quia, quas eius possimus
-                ipsum nostrum?</p>
+    <p class="password_details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quisquam id minus saepe! Distinctio quia, quas eius possimus ipsum nostrum?</p>
 
-        <p class="pass_label">Enter Password to encrypt your tasks</p>
+    <p class="pass_label">Enter Password to encrypt your tasks</p>
+    <form action="/" method="post">
         <input type="password" name="password" id="password">
-        <button id="encrypt">Encrypt</button>
-    </div>
+        <button id="encrypt" type="submit">Encrypt</button>
+    </form>
+</div>
+
     <p class="create_line_for_teaskex">To create a new TaskEx ID <button id="link_to_create"> Click here</button></p>
 
     <!-- create_id_password -->
     <div id="create_div">
-        <img src="./close.png" alt="" id="close_create_div">
-        <p class="label_create_new_id">Create a unique TaskEx ID</p>
-        <input type="text" name="myText" id="taskex_new_id" >
+        <form action="/new" method="post">
+            <img src="/images/close.png" alt="here" id="close_create_div">
+            <p class="label_create_new_id">Create a unique TaskEx ID</p>
+            <input type="text" name="myText2" id="taskex_new_id" >
 
-        <p class="create_password_text">Create Password</p>
-        <input type="password" name="password" id="new_password">
+            <p class="create_password_text">Create Password</p>
+            <input type="password" name="password" id="new_password">
 
-        <p class="confirm_password">Confirm your Password</p>
-        <input type="password" name="password" id="confirm_password">
+            <p class="confirm_password">Confirm your Password</p>
+            <input type="password" name="password2" id="confirm_password">
 
-        <button id="create_submit">Create</button>
+            <button id="create_submit" type="submit">Create</button>
+        </form>
     </div>
 </body>
 
