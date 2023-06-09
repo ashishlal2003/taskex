@@ -1,0 +1,369 @@
+*
+{
+    margin:0;
+}
+
+.taskready
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color:rgb(157, 157, 157);
+    position: absolute;
+    top:20%;
+    left:6.3%;
+}
+.inprogress
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color:rgb(157, 157, 157);
+    position: absolute;
+    top:20%;
+    left:27.3%;
+}
+.needsreview
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color:rgb(157, 157, 157);
+    position: absolute;
+    top:20%;
+    left:48.3%;
+}
+.done
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color:rgb(157, 157, 157);
+    position: absolute;
+    top:20%;
+    left:69.3%;
+}
+.cont_taskready
+{
+    height:auto;
+    width:260px;
+    /* background-color: red; */
+    position: absolute;
+    top:27%;
+    left:6.3%;
+}
+.cont_inprogress
+{
+    height:auto;
+    width:260px;
+    /* background-color: red; */
+    position: absolute;
+    top:27%;
+    left:27.3%;
+}
+.cont_needsreview
+{
+    height:auto;
+    width:260px;
+    /* background-color: red; */
+    position: absolute;
+    top:27%;
+    left:48.3%;
+}
+.cont_done
+{
+    height:auto;
+    width:260px;
+    /* background-color: red; */
+    position: absolute;
+    top:27%;
+    left:69.3%;
+}
+.roadmap
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: grey;
+    font-weight: 600;
+    position: absolute;
+    top:2%;
+    left:6%;
+}
+#createtask
+{
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:30px;
+    width:140px;
+    border:none;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: rgb(136, 136, 136);
+    position: absolute;
+    top:12%;
+    left:6%;
+}
+#createtask:hover
+{
+    background-color: rgb(238, 238, 238);
+}
+#create_task_form
+{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    height: 120px;
+    width: 200px;
+    /* background-color: red; */
+    position: absolute;
+    top:70%;
+    left:0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border:solid 1px grey;
+}
+.task_ejs_div
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height:115px;
+    width:250px;
+    border:solid 2px rgb(223, 223, 223);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 3px 3px 0px;
+}
+#create_task_form
+{
+    z-index: 2;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 220px;
+    width: 27%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;    
+    position: absolute;
+    top:30%;
+    left:36.5%;
+}
+#title_task
+{
+    height: 40px;
+    width: 80%;
+    font-size: 2rem;
+    color: rgb(107, 107, 107);
+    font-weight: 700;
+    position: absolute;
+    top:6%;
+    left:3%;
+    padding-left: 15px;
+    border:none;
+}
+#title_task:focus
+{
+    outline: none;
+}
+#title_task::placeholder
+{
+    font-size: 2rem;
+    font-weight: 700;
+    color:rgb(171, 171, 171);
+}
+.description
+{
+    font-size: 1rem;
+    color: grey;
+    position: absolute;
+    top:31.2%;
+    left:8%;
+}
+#desc_entry
+{
+    height: 20px;
+    width:150px;
+    border:solid 2px grey;
+    border-radius: 5px;
+    position: absolute;
+    top:31%;
+    left:30%;
+    text-align: center;
+}
+.deadline
+{
+    font-size: 1rem;
+    color: grey;
+    position: absolute;
+    top:50%;
+    left:8%;
+}
+#due_task
+{
+    height: 26px;
+    width: 100px;
+    color: grey;
+    border:solid 1px grey;
+    position: absolute;
+    top:50%;
+    left:31%;
+}
+#create_kar_task
+{
+    font-weight: 600;
+    font-size: 0.9rem;
+    height: 30px;
+    width:100px;
+    background-color: grey;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    position: absolute;
+    top:72%;
+    left:8%;
+}
+#close_task_form
+{
+    cursor: pointer;
+    height: 12px;
+    opacity: 0.65;
+    position: absolute;
+    top:5%;
+    right:3%;
+}
+.title_task_in
+{
+    font-size:0.9rem;
+    color: rgb(143, 143, 143);
+    font-weight: 600;
+    position: relative;
+    top:6%;
+    left:5%;
+}
+.deadline_in
+{
+    font-size: 0.9rem;
+    color: rgb(151, 151, 151);
+    position: relative;
+    top:8%;
+    left:5%;
+}
+.created_by_in
+{
+    font-size: 0.9rem;
+    color: rgb(151, 151, 151);
+    position: relative;
+    top:9%;
+    left:5%;
+}
+#creator_in
+{
+    height: 20px;
+    width: 90px;
+    border:none;
+    background-color: rgb(213, 238, 255);
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: rgb(38, 118, 255);
+    position: relative;
+    top:-7%;
+    left:37%;
+    text-align: center;
+}
+#dropdown_taskready
+{
+    height: 25px;
+    width: 52%;
+    border:none;
+    background-color: rgb(255, 226, 254);
+    border-radius: 15px;
+    font-size: 0.86rem;
+    color: rgb(255, 71, 249);
+    position: relative;
+    top:0%;
+    left:5%;
+    text-align: center;
+}
+#dropdown_taskready:focus,#dropdown_inprogress:focus,#dropdown_needsreview:focus,#dropdown_done:focus
+{
+    outline: none;
+}
+#dropdown_taskready option
+{
+    background-color: rgb(255, 222, 254);
+    color:  rgb(255, 71, 249);
+    border: none;
+}
+#dropdown_inprogress
+{
+    height: 25px;
+    width: 52%;
+    border:none;
+    background-color: rgb(255, 238, 208);
+    border-radius: 15px;
+    font-size: 0.86rem;
+    color: rgb(255, 162, 0);
+    position: relative;
+    top:0%;
+    left:5%;
+    text-align: center;
+}
+#dropdown_inprogress option
+{
+    background-color: rgb(255, 229, 185);
+    color: rgb(255, 162, 0);
+    border: none;
+}
+#dropdown_needsreview
+{
+    height: 25px;
+    width: 52%;
+    border:none;
+    background-color: rgb(255, 219, 219);
+    border-radius: 15px;
+    font-size: 0.86rem;
+    color: rgb(255, 16, 16);
+    position: relative;
+    top:0%;
+    left:5%;
+    text-align: center;
+}
+#dropdown_needsreview option
+{
+    background-color: rgb(255, 190, 190);
+    color: rgb(255, 25, 25);
+    border: none;
+}
+#dropdown_done
+{
+    height: 25px;
+    width: 52%;
+    border:none;
+    background-color: rgb(227, 255, 227);
+    border-radius: 15px;
+    font-size: 0.86rem;
+    color:  rgb(0, 157, 0);
+    position: relative;
+    top:0%;
+    left:5%;
+    text-align: center;
+}
+#dropdown_done option
+{
+    background-color: rgb(227, 255, 227);
+    color: rgb(0, 157, 0);
+    border: none;
+}
+
+#save_status
+{
+    cursor: pointer;
+    height: 25px;
+    width:50px;
+    background-color: rgb(243, 243, 243);
+    color:rgb(143, 143, 143);
+    border: solid 1.6px rgb(213, 213, 213);
+    border-radius: 3px;
+    position: relative;
+    left:21%;
+}

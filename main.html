@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <title>workspace</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<style>
+</style>
+
+<body>
+    <p class="roadmap">Roadmap</p>
+    <button id="createtask">+ Create task </button>
+
+    <p class="taskready">Task ready</p>
+    <p class="inprogress">In Progress</p>
+    <p class="needsreview">Needs Review</p>
+    <p class="done">Done</p>
+
+    <div class="cont_taskready">
+        <!-- <% r=0 %>
+        <% for (let i = 0; i < tasks.length; i++) { %>     
+            <% if(tasks[i].status == "taskready_opt"){ %>
+                <% r++ %>
+            <div class="task_ejs_div">
+                <p class="title_task_in"><%= tasks[i].name %></p>
+                <p class="deadline_in"><%= tasks[i].deadline.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %></p>
+                <p class="created_by_in">Created by</p>
+                <div id="creator_in"><%= user.name %></div>
+                <form action="/workspace/update-task/<%= project._id %>/<%= tasks[i]._id %>" method="post">
+                    <select name="status" id="dropdown_taskready">
+                        <option value="taskready_opt">Task Ready</option>
+                        <option value="inprogress_opt">In Progress</option>
+                        <option value="needsreview_opt">Needs Review</option>
+                        <option value="done_opt">Done</option>
+                    </select>
+                    <button id="save_status" type="submit">Save</button>
+                </form>
+            </div>
+            <% } %>
+            <% } %>  -->
+
+            <div class="task_ejs_div">
+                <p class="title_task_in">Title</p>
+                <p class="deadline_in">1 January 2023</p>
+                <p class="created_by_in">Created by</p>
+                <div id="creator_in">Aditya Dev</div>
+                <select name="status" id="dropdown_taskready">
+                    <option value="taskready_opt">Task Ready</option>
+                    <option value="inprogress_opt">In Progress</option>
+                    <option value="needsreview_opt">Needs Review</option>
+                    <option value="done_opt">Done</option>
+                </select>
+                <button id="save_status" type="submit">Save</button>
+            </div>
+    </div>
+    <div class="cont_inprogress">
+        <!-- <% p=0 %>
+        <% for (let i = 0; i < tasks.length; i++) { %>     
+            <% if(tasks[i].status == "inprogress_opt"){ %>
+                <% p++ %>
+            <div class="task_ejs_div">
+                <p class="title_task_in"><%= tasks[i].name %></p>
+                <p class="deadline_in"><%= tasks[i].deadline.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %></p>
+                <p class="created_by_in">Created by</p>
+                <div id="creator_in"><%= user.name %></div>
+                <form action="/workspace/update-task/<%= project._id %>/<%= tasks[i]._id %>" method="post">
+                    <select name="status" id="dropdown_inprogress">
+                        <option value="inprogress_opt">In Progress</option>
+                        <option value="needsreview_opt">Needs Review</option>
+                        <option value="done_opt">Done</option>
+                    </select>
+                    <button id="save_status" type="submit">Save</button>
+                </form>
+            </div>
+            <% } %>
+            <% } %>  -->
+            <div class="task_ejs_div">
+                <p class="title_task_in">Title</p>
+                <p class="deadline_in">1 January 2023</p>
+                <p class="created_by_in">Created by</p>
+                <div id="creator_in">Aditya Dev</div>
+                <select name="status" id="dropdown_taskready">
+                    <option value="taskready_opt">Task Ready</option>
+                    <option value="inprogress_opt">In Progress</option>
+                    <option value="needsreview_opt">Needs Review</option>
+                    <option value="done_opt">Done</option>
+                </select>
+                <button id="save_status" type="submit">Save</button>
+            </div>
+    </div>
+    <div class="cont_needsreview">
+        <!-- <%  n=0 %>
+        <% for (let i = 0; i < tasks.length; i++) { %>     
+            <% if(tasks[i].status == "needsreview_opt"){ %>
+                <% n++ %>
+            <div class="task_ejs_div">
+                <p class="title_task_in"><%= tasks[i].name %></p>
+                <p class="deadline_in"><%= tasks[i].deadline.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %></p>
+                <p class="created_by_in">Created by</p>
+                <div id="creator_in"><%= user.name %></div>
+                <form action="/workspace/update-task/<%= project._id %>/<%= tasks[i]._id %>" method="post">
+                    <select name="status" id="dropdown_needsreview">
+                        <option value="needsreview_opt">Needs Review</option>
+                        <option value="inprogress_opt">In Progress</option>
+                        <option value="done_opt">Done</option>
+                    </select>
+                    <button id="save_status" type="submit">Save</button>
+                </form>
+            </div>
+            <% } %>
+            <% } %>  -->
+            <div class="task_ejs_div">
+                <p class="title_task_in">Title</p>
+                <p class="deadline_in">1 January 2023</p>
+                <p class="created_by_in">Created by</p>
+                <div id="creator_in">Aditya Dev</div>
+                <select name="status" id="dropdown_taskready">
+                    <option value="taskready_opt">Task Ready</option>
+                    <option value="inprogress_opt">In Progress</option>
+                    <option value="needsreview_opt">Needs Review</option>
+                    <option value="done_opt">Done</option>
+                </select>
+                <button id="save_status" type="submit">Save</button>
+            </div>
+    </div>
+    <div class="cont_done">
+        <!-- <% d=0 %>
+        <% for (let i = 0; i < tasks.length; i++) { %>     
+            <% if(tasks[i].status == "done_opt"){ %>
+                <% d++ %>
+            <div class="task_ejs_div">
+                <p class="title_task_in"><%= tasks[i].name %></p>
+                <p class="deadline_in"><%= tasks[i].deadline.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) %></p>
+                <p class="created_by_in">Created by</p>
+                <div id="creator_in"><%= user.name %></div>
+                <form action="/workspace/update-task/<%= project._id %>/<%= tasks[i]._id %>" method="post">
+                    <select name="status" id="dropdown_done">
+                        <option value="done_opt">Done</option>
+                        <option value="needsreview_opt">Needs Review</option>
+                    </select>
+                    <button id="save_status" type="submit">Save</button>
+                </form>
+            </div>
+            <% } %>
+            <% } %>  -->
+            <div class="task_ejs_div">
+                <p class="title_task_in">Title</p>
+                <p class="deadline_in">1 January 2023</p>
+                <p class="created_by_in">Created by</p>
+                <div id="creator_in">Aditya Dev</div>
+                <select name="status" id="dropdown_taskready">
+                    <option value="taskready_opt">Task Ready</option>
+                    <option value="inprogress_opt">In Progress</option>
+                    <option value="needsreview_opt">Needs Review</option>
+                    <option value="done_opt">Done</option>
+                </select>
+                <button id="save_status" type="submit">Save</button>
+            </div>
+    </div>
+<!-- 
+    <div id="project_analysis_div">
+        <img src="https://drive.google.com/uc?export=view&id=1ljAvSBTtWC5vIt8zQjTu_vZVDAaZlbvs" alt="" id="close_project_analysis">
+        <p class="mem_count_project">Members in Projex : </p>
+        <p class="count_value_mem">1</p>
+        <p class="tasks_completed_p">Total Completed Tasks</p>
+        <p class="count_value_completed"><%= d %></p>
+        <p class="inprogress_project_analysis">Total tasks that are In Progress : </p>
+        <p class="count_value_inprogress"><%= p %></p>
+        <p class="review_project_analysis">Total tasks that need to be reviewed : </p>
+        <p class="count_value_review"><%= n %></p>
+    </div>  -->
+
+    <form id="create_task_form">
+        <input name="taskName" type="none" id="title_task" placeholder="New Task">
+        <p class="description">Description</p>
+        <textarea id="desc_entry">Enter here</textarea>
+        <p class="deadline">Deadline</p>
+        <input name="taskDeadline" type="date" id="due_task">
+        <button id="create_kar_task">Create Task</button>
+        <img src="https://drive.google.com/uc?export=view&id=1ljAvSBTtWC5vIt8zQjTu_vZVDAaZlbvs" alt="" id="close_task_form">
+    </form>
+
+    <script>
+        let close = document.getElementById('close')
+        let create_task_form = document.getElementById('create_task_form')
+
+        window.onload = function () {
+            create_task_form.style.display="none"
+        }
+
+        let createtask=document.getElementById('createtask')
+        let title_task=document.getElementById('title_task')
+        createtask.addEventListener("click", 
+        function()
+        {
+            create_task_form.style.display="flex"
+            title_task.focus()
+        })
+
+        let close_task_form=document.getElementById('close_task_form')
+        close_task_form.addEventListener("click", 
+        function()
+        {
+            create_task_form.style.display="none"
+            back.style.background = "transparent"
+            back.style.zIndex = 0
+        })
+
+    </script>
+</body>
+
+</html>

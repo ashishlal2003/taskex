@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
-<style>
-    
+<style>   
+    *
+    {
+        margin:0;
+    }
     .logo
     {
         font-size: 2.5rem;
@@ -15,7 +18,7 @@
         color: gray;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         position: absolute;
-        top:-20px;
+        top:15px;
         left:30px;
     }
     .goto_id_text
@@ -24,7 +27,7 @@
         color:rgb(117, 117, 117);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         position: absolute;
-        top:200px;
+        top:220px;
         left:150px;
     }
     #taskex_id
@@ -35,7 +38,7 @@
         border-radius: 5px;
         position:absolute;
         left:150px;
-        top:270px;
+        top:263px;
         font-size: 1rem;
         padding-left: 10px;
     }
@@ -57,7 +60,7 @@
         font-size: 0.93rem;
         font-weight:500;
         position:absolute;
-        top:270px;
+        top:263px;
         left:315px;
     }
     #pass_div
@@ -65,7 +68,7 @@
         z-index: 2;
         background-color: white;
         display: none;
-        height:32%;
+        height:37%;
         width:25%;
         border:solid 2px grey;
         border-radius: 15px;
@@ -73,6 +76,7 @@
         position: absolute;
         top:20%;
         left:37.5%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     }
     /* .pass_required
     {
@@ -93,7 +97,7 @@
         color:rgb(122, 122, 122);
         text-align: center;
         position: absolute;
-        top:3%;
+        top:4%;
         left:24%;
         font-size: 1.5rem;
         font-weight: 600;
@@ -104,7 +108,7 @@
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-align: center;
         position: absolute;
-        top:16%;
+        top:23%;
         left:10%;
         right:10%;
      }
@@ -115,7 +119,7 @@
         text-align: center;
         font-weight: 600;
         position: absolute;
-        top:53%;
+        top:59%;
         left:13%;
      }
      #password
@@ -147,83 +151,113 @@
      {
         z-index: 2;
         background-color: white;
-        height:40%;
-        width:20%;
+        height:50%;
+        width:28%;
         border:solid 2px grey;
         border-radius: 15px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         position: absolute;
         top:18%;
         left:37.5%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+     }
+     .create_here_text
+     {
+        font-size: 1.5rem;
+        color: rgb(117, 117, 117);
+        font-weight: 700;
+        position: absolute;
+        top:3%;
+        left:35.8%;
+     }
+     .create_text_details
+     {
+        text-align: center;
+        position: absolute;
+        top:14%;
+        left:10%;
+        right:10%;
+        font-size: 1rem;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: grey;
      }
      .label_create_new_id
      {
-        font-size: 1rem;
+        font-size: 1.1rem;
         text-align: center;
         color: rgb(110, 110, 110);
+        font-weight: 600;
         position: absolute;
-        top:-1%;
-        left:20%;
+        top:37%;
+        left:26%;
      }
      #taskex_new_id
      {
         height:30px;
-        width:170px;
-        border:solid 2px rgb(164, 164, 164);
+        width:193px;
+        border:solid 2px grey;
         border-radius: 5px;
         position: absolute;
-        top:15%;
-        left:20%;
+        top:46%;
+        left:26%;
+        font-size: 0.95rem;
         padding-left: 10px;
+     }
+     #taskex_new_id::placeholder
+     {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: rgb(151, 151, 151);
      }
      .create_password_text
      {
         font-size: 1rem;
         color: rgb(110, 110, 110);
+        font-weight: 600;
         position: absolute;
-        top:24%;
-        left:20%;
+        top:60%;
+        left:10%;
      }
      #new_password
      {
         height:30px;
-        width:170px;
+        width:130px;
         border:solid 2px rgb(164, 164, 164);
         border-radius: 5px;
         position: absolute;
-        top:39%;
-        left:20%;
+        top:67%;
+        left:10%;
         padding-left: 10px;
      }
      .confirm_password
      {
         font-size: 1rem;
+        font-weight: 600;
         color: rgb(110, 110, 110);
         position: absolute;
-        top:48%;
-        left:20%;
+        top:60%;
+        right:10%;
      }
      #confirm_password
      {
         height:30px;
-        width:170px;
+        width:152px;
         border:solid 2px rgb(164, 164, 164);
         border-radius: 5px;
         position: absolute;
-        top:63%;
-        left:20%;
+        top:67%;
+        right:10%;
         padding-left: 10px;
      }
      #create_submit
      {
         height:33px;
-        width:30%;
-        background-color: #3C79F5;
+        width:25%;
+        background-color: rgb(114, 114, 114);
         border:none;
         border-radius: 5px;
         position: absolute;
-        top:81%;
-        left: 35%;
+        top:82.5%;
+        left: 37.5%;
         color: white;
         font-size: 1rem;
      }
@@ -231,7 +265,7 @@
      {
         font-size: 1.05rem;
         position: absolute;
-        top:310px;
+        top:325px;
         left:150px;
         color: rgb(178, 178, 178);
         font-weight: 100;
@@ -246,7 +280,8 @@
         font-size: 1rem;
         text-decoration: underline;
         position: relative;
-        left:-3px
+        left:-3px;
+        top:-1px;
      }
      #close_pass_div
      {
@@ -307,6 +342,11 @@
     <div id="create_div">
         <form action="/new" method="post">
             <img src="/images/close.png" alt="here" id="close_create_div">
+            <p class="create_here_text">Create Here</p>
+            <p class="create_text_details">Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Commodi maxime, nostrum numquam quisquam iusto
+                id dicta atque consequuntur voluptatem</p>
+
             <p class="label_create_new_id">Create a unique TaskEx ID</p>
             <input type="text" name="myText2" id="taskex_new_id" >
 
