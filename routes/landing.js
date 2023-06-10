@@ -2,10 +2,11 @@ const express = require('express');
 const router = express.Router();
 const controller = require('../controllers/landing');
 
-// Handle TaskEx ID form submission
-router.post('/', controller.submitTaskExID);
+router.get('/', controller.getLanding);
+router.post('/', controller.postNew);
 
-// Handle new TaskEx ID form submission
-router.post('/new', controller.createTaskExID);
+router.get('/:id', controller.getHome);
+router.post('/temp', controller.postOk);
+router.post('/login', controller.postLogin);
 
 module.exports = router;
