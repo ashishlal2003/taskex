@@ -1,12 +1,22 @@
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/landing');
+const {
+    getLanding,
+    postNew,
+    getHome,
+    postOk,
+    postLogin,
+    isAuth,
+    logout
+} = require('../controllers/landing');
 
-router.get('/', controller.getLanding);
-router.post('/', controller.postNew);
+router.get('/:id', isAuth, getHome);
+router.get('/', getLanding);
+router.post('/', postNew);
 
-router.get('/:id', controller.getHome);
-router.post('/temp', controller.postOk);
-router.post('/login', controller.postLogin);
+router.post('/temp',postOk);
+router.post('/login',postLogin);
+router.post('/logout', logout);
+
 
 module.exports = router;
